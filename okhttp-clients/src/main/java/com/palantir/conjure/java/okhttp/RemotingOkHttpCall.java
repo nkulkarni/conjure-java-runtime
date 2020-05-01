@@ -656,6 +656,7 @@ final class RemotingOkHttpCall extends ForwardingCall {
         private final UnknownRemoteException unknownRemoteException;
 
         private IoUnknownRemoteException(UnknownRemoteException unknownRemoteException) {
+            super(unknownRemoteException);
             this.unknownRemoteException = unknownRemoteException;
         }
 
